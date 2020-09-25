@@ -1,0 +1,116 @@
+/* all things needed for the nav bar*/
+body{
+    font-family: sans-serif;
+    font: arial;
+    font-size: 25px;
+}
+/*Nav Bar CSS*/
+.nav{
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+
+    
+}
+.nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    background-color: #fff;
+    border: 1px solid #555;
+}
+.nav li a{
+    display: block;
+    color: #000;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    text-decoration: none;
+    color: blue;
+    text-decoration: underline;
+
+}
+.nav li{
+    text-align: center;
+    border: 1px solid #555;
+    display: inline-block;
+    width: 24.6%;
+}
+
+.nav li a.active{
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+}
+.nav li a:hover:not(.active){
+    background-color: #000;
+    color: white;
+}
+/*End of Nav Bar CSS*/
+
+.banner{
+    width: 100%;
+    height: auto;
+}
+
+.main{
+    width:82.1%;
+    height: auto;
+    background-color: #fff;
+    display:inline-block;
+    padding: 0px;
+    margin: 0px;  
+}
+
+.twitter{
+    width: 17.5%;
+    height: 400px; 
+    display:inline-block;
+    vertical-align: top;
+}
+
+
+/*Image for products page   */
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column{
+width: 100%;
+}
+
+.column img{
+    width:  5%;
+    margin-top: 8px;
+  vertical-align: middle;
+    border: 1px solid #000;
+    }
+#large{
+width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#LImg{
+    max-width: 500px;
+  max-height: 500px;
+}
+
+tr img{
+    max-width: 200px;
+    max-height: 200px;
+    }
+th{
+    text-align: center;
+}
+.contact{
+    float: right;
+    text-align: right;
+    height: auto;
+}
+

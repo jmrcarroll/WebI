@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link id="stylesheet" rel="stylesheet" type="text/css" href="../stylesheets/main.css">
+        <link id="stylesheet2" rel="alternate stylesheet" type="text/css" href="../stylesheets/access.css">
+        <link id="stylesheet3" rel="alternate stylesheet" type="text/css" href="../stylesheets/dark.css">
+        <script src="../scripts/Gallery.js"></script>  
+        <title> Products | BecomeGreen</title>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        <div class="banner">
+         <a href="index.html"><img src="../images/logo/becomeGreen-logo-Highres.png" alt="BecomeGreen Logo"></a>
+        <div class="contact">
+            <p>Tel: 01473 888008</p>
+            <p>The Barn,</p>
+            <p>Farm Road,</p>
+            <p>Hadleigh,</p>
+            <p>Suffolk.</p>
+            <p>IP9 7TG.</p>
+            <P id="time">.</p>
+            <p id="date"></p>
+            <script>
+                var obj = new Date();
+                var date = obj.getDate() + "/" + (obj.getMonth()+1) + "/" + obj.getFullYear();
+                var time = obj.getHours() + ":";
+                if (obj.getMinutes() <10){
+                    time = time + "0" + obj.getMinutes();
+                }else{
+                    time = time + obj.getMinutes();
+                }
+                console.log(date);
+                console.log(time);
+                document.getElementById("time").innerHTML = time;
+                document.getElementById("date").innerHTML = date;
+            </script>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="products.html">Products</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="courseEnrolment.html">Enrolment</a></li>
+            </ul>
+            <ul>
+                <li><a class="theme active" onclick="styles('../stylesheets/main.css', 0); ">Default</a></li>
+                <li><a class ="theme" onclick="styles('../stylesheets/access.css', 1);">Accessability  </a></li>
+                <li><a class="theme" onclick="styles('../stylesheets/dark.css', 2); ">Dark theme</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div id="products">
+                <div class="large">
+                    <img id="LImg" src="../images/stock-images/99-DIY-Upcycled-Furniture-Projects-and-Houswares-73.jpg" alt="Coathangers">
+                </div>
+                <div class="column">
+                <img src="../images/stock-images/99-DIY-Upcycled-Furniture-Projects-and-Houswares-73.jpg" alt="Coathanger" class="small" onclick="enlarge(0)">
+                <img src="../images/stock-images/chair.jpg" alt="Chair" class="small" onclick="enlarge(1)">
+                <img src="../images/stock-images/garage-bar-garage-ideas.jpg" alt="Tractor bar." class="small" onclick="enlarge(2);">
+                <img src="../images/stock-images/headboard.jpg" alt="Pew Headboard" class="small" onclick="enlarge(3);">
+                <img src="../images/stock-images/hip-key-racks.jpg" alt="Key Rack" class="small" onclick="enlarge(4);">
+                <img src="../images/stock-images/pretty-in-patchwork-accent-chair-2-upcycled-furniture-junk-gypsies.jpg" alt="patchwork Chair" class="small" onclick="enlarge(5);">
+                <img src="../images/stock-images/rustic-wooden-upcycled-furniture-cupboard-with-wooden-floor-and-grey-wall-for-traditional-family-room-traditional-wood-upcycled-furniture-for-your-furni.jpg" alt="Chest of draws" class="small" onclick="enlarge(6);">
+                <img src="../images/stock-images/the-best-diy-upcycled-furniture-ideas.jpg" alt="Counter" class="small" onclick="enlarge(7);">
+                <img src="../images/stock-images/Trash-Furniture-round-up.jpg" alt="Assortment of furniture" class="small" onclick="enlarge(8);">
+                <img src="../images/stock-images/upcycled-cabinet.jpg" alt="Cabinet" class="small" onclick="enlarge(9);">
+                <img src="../images/stock-images/Upcycled-Furniture-1.jpg" alt="Desk" class="small" onclick="enlarge(10);">
+                <img src="../images/stock-images/upcycled-furniture-american-pipe-dream-chair.jpg" alt="Steampunk Chair" class="small" onclick="enlarge(11);">
+                <img src="../images/stock-images/Upcycled-Furniture-for-Patio.jpg" alt="Gazibo" class="small" onclick="enlarge(12);">
+                <img src="../images/stock-images/upcycled-furniture-map-desk.jpg" alt="Desk" class="small" onclick="enlarge(13);">
+                <img src="../images/stock-images/upcycled-furniture-oar-headboard.jpg" alt="Oar Headboard" class="small" onclick="enlarge(14);">
+                <img src="../images/stock-images/upcycled-furniture.jpg" alt="Coffeetable" class="small" onclick="enlarge(15);">
+                <img src="../images/stock-images/upcycled-industrial-furniture.gif" alt="bed" class="small" onclick="enlarge(16);">
+                </div>
+            </div>
+        </div>
+          <div class="twitter">  
+            <a class="twitter-timeline" data-lang="en" data-width="300" data-height="400" href="https://twitter.com/BecomeGreenSB?ref_src=twsrc%5Etfw">Tweets by BecomeGreenSB</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <div class="fb-page" data-href="https://www.facebook.com/BecomeGreeen-277086976317740/" data-tabs="timeline" data-width="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/BecomeGreeen-277086976317740/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BecomeGreeen-277086976317740/">BecomeGreeen</a></blockquote></div>
+            </div>
+    </body>
+
+
+</html>

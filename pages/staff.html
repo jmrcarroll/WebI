@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link id="stylesheet" rel="stylesheet" type="text/css" href="../stylesheets/main.css">
+        <link id="stylesheet1" rel="alternate stylesheet" type="text/css" href="../stylesheets/access.css">
+        <link id="stylesheet2" rel="alternate stylesheet" type="text/css" href="../stylesheets/dark.css">
+        <script src="../scripts/Gallery.js"></script>    
+        <title> Staff | BecomeGreen</title>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        <div class="banner">
+         <a href="index.html"><img src="../images/logo/becomeGreen-logo-Highres.png" alt="BecomeGreen Logo"></a>
+        <div class="contact">
+            <p>Tel: 01473 888008</p>
+            <p>The Barn,</p>
+            <p>Farm Road,</p>
+            <p>Hadleigh,</p>
+            <p>Suffolk.</p>
+            <p>IP9 7TG.</p>
+            <P id="time">.</p>
+            <p id="date"></p>
+            <script>
+                var obj = new Date();
+                var date = obj.getDate() + "/" + (obj.getMonth()+1) + "/" + obj.getFullYear();
+                var time = obj.getHours() + ":" + obj.getMinutes();
+                console.log(date.toString())
+                document.getElementById("time").innerHTML = time;
+                document.getElementById("date").innerHTML = date;
+            </script>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a class="active" href="staff.html">Staff</a></li>
+                <li><a href="courseEnrolment.html">Enrolment</a></li>
+            </ul>
+            <ul>
+                <li><a class="theme active" onclick="styles('../stylesheets/main.css', 0); ">Default</a></li>
+                <li><a class ="theme" onclick="styles('../stylesheets/access.css', 1);">Accessability  </a></li>
+                <li><a class="theme" onclick="styles('../stylesheets/dark.css', 2); ">Dark theme</a></li>
+            </ul>
+        </div>
+        <div ></div>
+        <div class="main">
+            <table>
+                <tr>
+                    <td class="thead">Jackie</td>
+                    <td class="thead">Jon</td>
+                    <td class="thead">Kate</td>
+                </tr>
+                <tr>
+                    <td><img src="../images/staff/Jackie.jpg" alt="Jackie"></td>
+                    <td><img src="../images/staff/Jon.jpg" alt="Jon"></td>
+                    <td><img src="../images/staff/Kate.jpg" alt="Kate"></td>
+                </tr>
+                <tr>
+                    <td>Born in London, 1993, Jackie has always been driven by creativity. When she is not running the creative workshops you will find her in her studio painting, tinkering with her old Yamaha motorbike, or cooking for the masses at some kind of village charity event. You often hear her say, “Oh, why did I agree to do this?”.  A little known fact about Jackie is her passion for milk bottles. She started collecting them when she was only 8, her uncle had a small collection in his shed. Since then she has inherited this collection and extended it to almost 500 different bottles of varying ages. When you see her, ask about it, she can talk for hours once you get her going!</td>
+                    <td>Born in Harlow – although we don’t hold that against him – in 1991. When he is not being our design and metalwork guru, Jon is often found restoring his old VW Crossover Bay window Campervan, or at the riding stables with his young family. He loves the smell of spray paint and grease and often heard saying, “Pass the spanner.” Jon loves his job and the team he works with, but most of all, he loves sitting in the local Turkish restaurant with the team. It reminds him of the three years he worked in Turkey with an artisan blacksmith, whilst living in a cow shed of all places.</td>
+                    <td>Also born in London, born in 1995, the baby of the team. Supremely organised Kate literally runs the show. She is the go to person for any administration queries and also the best carpenter we have ever met. Alongside her studies at Colchester School of Arts she also studied woodwork and joinery, having already spent years working in the shed at the bottom of the garden, producing bespoke furniture and selling it locally with her father. She comes from a long line of creative people; some things are just in the blood. She loves long walks with her three dogs; they can often be seen asleep in our reception. Kate tells us, “it’s invaluable time to empty my mind when I am walk, I often consider how to get the most out of a unique piece of furniture or a cherished possession entrusted with us to create a memory that lasts forever”.</td>       
+                </tr>
+                <tr>
+                    <td>Best ever holiday: Backpacking in India<br>
+                        Favourite food: Turkish<br>
+                        Favourite musical artist: Ed Sheeran
+</td>
+                    <td>Best ever holiday: Canoeing in the Sea of Cortez<br>
+                        Favourite food: Turkish of course<br>
+                        Favourite band: The Beach Boys<br>
+</td>
+                    <td>Best ever holiday: The blissful Maldives<br>
+                        Favourite food: Thai & anything with Chocolate<br>
+                        Favourite band:Radiohead<br>
+</td>
+                </tr>
+            
+            
+            </table>
+        </div>
+        <div class="twitter">  
+            <a class="twitter-timeline" data-lang="en" data-width="300" data-height="400" href="https://twitter.com/BecomeGreenSB?ref_src=twsrc%5Etfw">Tweets by BecomeGreenSB</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class="fb-page" data-href="https://www.facebook.com/BecomeGreeen-277086976317740/" data-tabs="timeline" data-width="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/BecomeGreeen-277086976317740/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BecomeGreeen-277086976317740/">BecomeGreeen</a></blockquote></div>
+        </div>
+    </body>
+
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8"/>
+        <link id="stylesheet" rel="stylesheet" type="text/css" href="../stylesheets/main.css">
+        <link id="stylesheet1" rel="alternate stylesheet" type="text/css" href="../stylesheets/access.css">
+        <link id="stylesheet2" rel="alternate stylesheet" type="text/css" href="../stylesheets/dark.css">
+        <script src="../scripts/Gallery.js"></script>    
+        <title>Home | BecomeGreen</title>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        <div class="banner">
+         <a href="index.html"><img src="../images/logo/becomeGreen-logo-Highres.png" alt="BecomeGreen logo"></a>
+        <div class="contact">
+            <p>Tel: 01473 888008</p>
+            <p>The Barn,</p>
+            <p>Farm Road,</p>
+            <p>Hadleigh,</p>
+            <p>Suffolk.</p>
+            <p>IP9 7TG.</p>
+            <P id="time">.</p>
+            <p id="date"></p>
+            <script>
+                var obj = new Date();
+                var date = obj.getDate() + "/" + (obj.getMonth()+1) + "/" + obj.getFullYear();
+                var time = obj.getHours() + ":" + obj.getMinutes();
+                console.log(date.toString())
+                document.getElementById("time").innerHTML = time;
+                document.getElementById("date").innerHTML = date;
+            </script>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="courseEnrolment.html">Enrolment</a></li>
+            </ul>
+            <ul>
+                <li><a class="theme active" onclick="styles('../stylesheets/main.css', 0); ">Default</a></li>
+                <li><a class ="theme" onclick="styles('../stylesheets/access.css', 1);">Accessability  </a></li>
+                <li><a class="theme" onclick="styles('../stylesheets/dark.css', 2); ">Dark theme</a></li>
+            </ul>
+        </div>
+        <div ></div>
+        <div class="main">
+          <p>We are a company located on the Suffolk and Essex border driven by a desire to reduce waste in design and introducing the upcycling concept. All our products are carefully selected. They are handmade by passionate designers that care about the environment. Jackie, Jon and Kate met whilst studying design at the Colchester School of Art, found that they shared the same passion and started BecomeGreen.</p>
+<p>We pride ourselves in our customer service and personal approach to our projects and the projects that customers commission us to create for them. If you have an idea, simply contact us and we will bring it alive for you. Bespoke design and manufacturing work is what we are good at! We can turn personal things, like a champagne bottle from your wedding into something significant to act as a unique reminder of that day.</p>
+            <p>Here are some links to magazines you can subscribe to:</p>
+            <p><a href="http://www.relovedmag.co.uk/" target="_blank">Relove Magazine</a></p>
+            
+            <p><a href="http://www.upcyclemagazine.com/" target="_blank">Upcycled Magazine</a></p>
+
+        </div>
+        <div class="twitter">  
+            <a class="twitter-timeline" data-lang="en" data-width="400" data-height="400" href="https://twitter.com/BecomeGreenSB?ref_src=twsrc%5Etfw">Tweets by BecomeGreenSB</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class="fb-page" data-href="https://www.facebook.com/BecomeGreeen-277086976317740/" data-tabs="timeline" data-width="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/BecomeGreeen-277086976317740/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BecomeGreeen-277086976317740/">BecomeGreeen</a></blockquote></div>
+        </div>
+    </body>
+</html>

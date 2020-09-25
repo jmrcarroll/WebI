@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link id="stylesheet" rel="stylesheet" type="text/css" href="../stylesheets/main.css">
+        <link id="stylesheet1" rel="alternate stylesheet" type="text/css" href="../stylesheets/access.css">
+        <link id="stylesheet2" rel="alternate stylesheet" type="text/css" href="../stylesheets/dark.css">
+        <script src="../scripts/Gallery.js"></script>
+        <title> Courses | BecomeGreen</title>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        <div class="banner">
+         <a href="index.html"><img src="../images/logo/becomeGreen-logo-Highres.png" alt="BecomGreen Logo"></a>
+        <div class="contact">
+            <p>Tel: 01473 888008</p>
+            <p>The Barn,</p>
+            <p>Farm Road,</p>
+            <p>Hadleigh,</p>
+            <p>Suffolk.</p>
+            <p>IP9 7TG.</p>
+            <P id="time">.</p>
+            <p id="date"></p>
+            <script>
+                var obj = new Date();
+                var date = obj.getDate() + "/" + (obj.getMonth()+1) + "/" + obj.getFullYear();
+                var time = obj.getHours() + ":" + obj.getMinutes();
+                console.log(date.toString())
+                document.getElementById("time").innerHTML = time;
+                document.getElementById("date").innerHTML = date;
+            </script>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a class="active" href="courseEnrolment.html">Enrolment</a></li>
+            </ul>
+            <ul>
+                <li><a class="theme active" onclick="styles('../stylesheets/main.css', 0); ">Default</a></li>
+                <li><a class ="theme" onclick="styles('../stylesheets/access.css', 1);">Accessability  </a></li>
+                <li><a class="theme" onclick="styles('../stylesheets/dark.css', 2); ">Dark theme</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <p>This class is designed for total beginners, or those just starting out.</p> 
+            <p>Held in our 15th Century barn, just off the A14 in Suffolk, the course runs from 10.30am - 2.30pm (approximately) with a light lunch included.</p>
+            <p>The class focuses primarily on how to repurpose furniture with different paint techniques and how to protect the paint properly sealing in the finish for years to come. You will also learn tips and trick when restoring items, including how to fix joints, making the structure of your furniture as solid as it was when it left the factory!
+            <p>The cost for a day course is £85.00. If you wish to bring someone else with you on the course (spectator), this isn't a problem, but please advise at the time of booking, (an additional cost will be made for lunch). We can hold a maximum of 4 students at one time. PLEASE NOTE, A £20.00 DEPOSIT IS REQUIRED AT THE TIME OF BOOKING. If for some reason you need to cancel, but re-arrange for a later date, this deposit will be carried over. Cancellations with less than 24 hours’ notice will require full payment. Private Sessions are available for weekends throughout the year, and are priced at £100.00 each for four people. Please E Mail us if you wish to have a weekend workshop or fill in the form below.</p>
+            <p>What's included in the price?</p>
+            <p>All tools and materials are included within the course, as is a light homemade lunch, tea, coffee and biscuits.</p>
+            <p>Course dates for early 2018 are 9th January, 17th January, 13th February, 20th February, 6th march, 27th March.</p>
+            <form action="mailto:JohnC4479@colchester.ac.uk" method="post" enctype="text/plain">
+                <table>
+                    <tr>
+                        <td>First Name: </td>
+                        <td><input type="text" name="fname"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name: </td>
+                        <td><input type="text" name="lname" la></td>
+                    </tr>
+                    <tr>
+                        <td>Phone number: </td>
+                        <td><input type="number" name="phone"></td>
+                    </tr>
+                    <tr>
+                        <td>Number of Pople: </td>
+                        <td><input type="number" name="Peops" max="4" min="1"></td>
+                    </tr>
+                    <tr>
+                        <td>Date:</td>
+                    </tr>
+                     <tr>
+                        <td><input type="radio" name="date" value="9/1"> 9th of January</td>
+                    </tr>
+                     <tr>
+                        <td><input type="radio" name="date" value="17/1"> 17th of January</td>
+                    </tr>
+                     <tr>
+                        <td><input type="radio" name="date" value="13/2"> 13th of February</td>
+                    </tr>
+                     <tr>
+                        <td><input type="radio" name="date" value="20/2"> 20th of February</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="date" value="6/3"> 6th of March</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="date" value="27/3">27th of March</td>
+                    </tr>
+                    <tr>
+                        <td>Comments</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="submit"></td>
+                    </tr>
+
+                </table>
+                
+                                                                            
+            </form>
+                            <p> here is an example of what you may be able to do at the end of the course:</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/b9KF6D0V26E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            
+</div>
+            <div class="twitter">  
+            <a class="twitter-timeline" data-lang="en" data-width="300" data-height="400" href="https://twitter.com/BecomeGreenSB?ref_src=twsrc%5Etfw">Tweets by BecomeGreenSB</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <div class="fb-page" data-href="https://www.facebook.com/BecomeGreeen-277086976317740/" data-tabs="timeline" data-width="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/BecomeGreeen-277086976317740/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BecomeGreeen-277086976317740/">BecomeGreeen</a></blockquote></div>
+        </div>
+    </body>
+
+
+</html>
